@@ -1,0 +1,36 @@
+import java.util.Sanner;
+import java.iop.PrintStream;
+
+public class ejemplo18{
+	public static void main(String[]args){
+	Scanner lectura = new Scanner (Sdtem.in);
+	PrintStream ot = new PrintStream(System.out);
+	
+	int opc =0, sumap = 0, sumai =0;
+	
+	ot.println("Escojauna opcion: ");
+	ot.println("1. Sumar numero pares e impares");
+	ot.println("2. Tabla de multiplicar de un  numero");
+	ot.println("3. Contar un digito dentro de un conjunto");
+	ot.println("4. Numero primos entre un rango");
+	ot.println("5. Salir ");
+	
+	ot.println("/n (La opcion debe ser un numero 1 y 4)//tOPCION==>");
+	opc = lectura.nextInt();
+	
+	switch(opc){
+		case 1:
+			i = 1;
+			int numero1;
+			ot.print("Introduza un numero entero: ");
+			numero1 = lectura.nextInt();
+
+			while(i<=numero1){
+			if(i%2 == 0){
+			sumap = sumap +i;
+			}//if
+			else{
+				sumai = sumai + i;
+			}//else
+			i++;
+		}//while

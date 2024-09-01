@@ -1,0 +1,3 @@
+module trabajo {
+	exports trabajoJava;
+}
